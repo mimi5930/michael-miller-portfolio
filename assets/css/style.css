@@ -29,6 +29,7 @@ header h1 {
     font-size: 60px;
     text-shadow: 0 0 5px rgb(255, 255, 255, 10px);
     letter-spacing: 1.5px;
+    padding: 20px;
 }
 
 header a {
@@ -75,23 +76,29 @@ header nav ul li a:hover {
 /* about me section begin */
 
 .about-me {
-    margin: 50px;
+    background-color: rgb(182, 182, 182);
+    border-radius: 3px;
+    margin: 80px 20px;
     display: flex;
     justify-content: space-evenly;
     align-items:center;
 }
 
 .headshot {
-    width: 80%;
-    height: 80%;
     max-width: 300px;
     max-height: 300px;;
     border-radius: 90%;
+    padding: 5px;
 }
 
-.about-me h1,
+.about-me h2 {
+    font-size: x-large;
+    padding-left: 7%;
+}
 .about-me p {
-    padding-left: 70px;
+    font-size: large;
+    font-weight: lighter;
+    padding-left: 7%;
 }
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
