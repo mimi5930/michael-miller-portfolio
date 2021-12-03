@@ -1,5 +1,5 @@
 :root {
-    --primary-font: Verdana, Geneva, sans-serif;
+    --primary-font: Hoefler Text, Bitstream Charter, Georgia, serif;
 }
 
 * {
@@ -7,31 +7,41 @@
     font-family: var(--primary-font);
 }
 
+body {
+    background-color: lightgrey;
+}
+
 header {
-    display: flex 1;
-    background-color: aqua;
+    height: 180px;
+    display: flex;
+    background-color: rgb(252, 198, 182);
     flex-wrap: wrap;
     justify-content: space-between;
+    background-image: url(../images/mike-header.JPG);
+    background-size: cover;
+    background-position: 50% 35%;
 }
 
 
 header h1 {
     font-weight: bold;
-    padding-top: 5px;
-    padding-left: 5px;
+    padding-left: 10px;
     font-size: 40px;
+    text-shadow: 0 0 5px rgb(255, 255, 255, 10px);
+    letter-spacing: 1.5px;
 }
 
 header a {
     text-decoration: none;
-    color: black;
+    color:rgb(236, 236, 220)
 }
 
 header nav ul {
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-      list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 header nav ul li {
@@ -39,22 +49,19 @@ header nav ul li {
 }
 
 #contact-style {
+    font-size: 120%;
+    font-style: italic;
+    padding: 5px;
     color: blue;
+    background-color: whitesmoke;
+    border-radius: 10px;
 }
 
+header nav ul li a {
+    color: whitesmoke;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
 header nav ul li a:hover {
+    text-shadow: 0 0 12px rgba(236, 236, 220, 1);
     color: rgb(236, 236, 220);
-}
-
-/* MEDIA QUERY FOR SMALLER SCREENS */
-@media screen and (max-width: 980px) {
-
-    header h1 {
-        width: 100%;
-    }
-
-    header nav ul {
-        font-size: 70%;
-        justify-content: center;
-    }
 }
