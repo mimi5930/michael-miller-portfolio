@@ -27,11 +27,10 @@ header {
 
 
 header h1 {
+    margin: 0px auto auto 5px;
     font-weight: bold;
     font-size: 60px;
-    text-shadow: 0 0 5px rgb(255, 255, 255, 10px);
-    letter-spacing: 1.5px;
-    padding: 20px;
+    text-shadow: 0 0 12px rgba(236, 236, 220, .2);
 }
 
 header a {
@@ -121,14 +120,15 @@ header nav ul li a:hover {
     border-radius: 3px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex: 1;
+    justify-content: space-evenly;
+    overflow: hidden;
 }
 
 .projects-content img {
-    margin: 20px;
-    width: 500px;
-    height: 250px;
-    object-fit: fill;
+    margin: 35px;
+    width: 600px;
+    height: 200px;
     border: black 3px solid;
 }
 
