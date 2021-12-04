@@ -76,7 +76,7 @@ header nav ul li a:hover {
 
 /* about me section begin */
 
-.about-me {
+.about {
     background-color: var(--box-color);
     border-radius: 3px;
     margin: 80px 20px;
@@ -92,11 +92,11 @@ header nav ul li a:hover {
     padding: 10px;
 }
 
-.about-me h2 {
+.about h2 {
     font-size: x-large;
     padding-left: 7%;
 }
-.about-me p {
+.about p {
     font-size: large;
     font-weight: lighter;
     padding-left: 7%;
@@ -223,11 +223,11 @@ footer {
         margin-top: 28px;
     }
 
-    .about-me {
+    .about {
         flex-direction: column;
     }
 
-    .about-me h2 {
+    .about h2 {
         text-align: center;
     }
 
@@ -235,11 +235,25 @@ footer {
         font-size: 30px;
     }
 
-    #first-project
+    #first-project {
+        width: 400px;
+        height: 200px;
+    }
+
+    .proj-name img {
+        margin: 10px;
+        width: 400px;
+        height: 200px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
 
     .phone,
     .email {
-        padding: 0px 15px;
+        margin-top: 10px;
+        padding: 10px 5px;
     }
 
     /* TODO: prjects have no margins (maybe only top and bottom) and images fit in screen. */
