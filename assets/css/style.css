@@ -1,6 +1,7 @@
 :root {
     --primary-font: Hoefler Text, Bitstream Charter, Georgia, serif;
     --box-color: rgb(182, 182, 182);
+    --box-color-fade: rgb(182, 182, 182, .8);
 }
 
 * {
@@ -12,7 +13,7 @@ body {
     background-color: lightgrey;
 }
 
-/* header begin */
+/* -----------header begin--------------- */
 
 header {
     display: flex;
@@ -59,7 +60,7 @@ header nav ul li {
 }
 
 #contact-style:hover {
-    background-color: wheat;
+    background-color: white;
 }
 
 header nav ul li a {
@@ -102,7 +103,102 @@ header nav ul li a:hover {
     padding-left: 7%;
 }
 
-/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
-@media screen and (max-width: 980px) {
+/* about me end */
 
+/* projects start */
+
+.projects {
+    margin: 80px 20px;
 }
+
+.projects h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.projects-content {
+    background-color: var(--box-color);
+    border-radius: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.projects-content img {
+    margin: 20px;
+    width: 500px;
+    height: 250px;
+    object-fit: fill;
+    border: black 3px solid;
+}
+
+#first-project {
+    width: 900px;
+    height: 300px;
+}
+
+.run-buddy img {
+    position: relative;
+}
+
+.run-buddy div {
+    background-color: var(--box-color-fade);
+    position: absolute;
+    padding: 0px 10px;
+    bottom: 18%;
+    left: 3%;
+}
+
+.robot-gladiators {
+    position: relative;
+}
+
+.robot-gladiators div {
+    background-color: var(--box-color-fade);
+    position: absolute;
+    padding: 10px;
+    bottom: 31px;
+    left: 28px;
+}
+
+.password-generator {
+    position: relative;
+}
+
+.password-generator div {
+    background-color: var(--box-color-fade);
+    position: absolute;
+    padding: 10px;
+    bottom: 18%;
+    left: 3%;
+}
+
+/* projects end */
+
+/* contact me start */
+
+footer {
+    text-align: center;
+}
+
+.contact-info {
+    background-color: var(--box-color);
+    border-radius: 3px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h2 {
+    font-size: 42px;
+    text-align: center;
+}
+
+.phone,
+.email {
+    background-color: whitesmoke;
+    border-radius: 15px;
+    padding: 0px 30px;
+}
+
+/* contact me end */
