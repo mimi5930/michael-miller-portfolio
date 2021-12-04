@@ -13,7 +13,7 @@ body {
     background-color: lightgrey;
 }
 
-/* -----------header begin--------------- */
+/* header begin */
 
 header {
     display: flex;
@@ -53,6 +53,7 @@ header nav ul li {
     padding: 8px;
     font-size: 120%;
     font-style: italic;
+    white-space: nowrap;
     color: darkgreen;
     background-color: whitesmoke;
     border-radius: 10px;
@@ -71,10 +72,9 @@ header nav ul li a:hover {
     color: rgb(236, 236, 220);
 }
 
-/* ------------- header end ------------- */
+/* header end */
 
-
-/* about me section begin */
+/* about me begin */
 
 .about {
     background-color: var(--box-color);
@@ -166,8 +166,7 @@ footer {
     justify-content: space-around;
 }
 
-.phone,
-.email {
+.contact-info div {
     background-color: whitesmoke;
     border-radius: 15px;
     padding: 0px 30px;
@@ -186,6 +185,11 @@ footer {
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
 
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
     .projects-content {
         flex-direction: column;
     }
@@ -194,6 +198,7 @@ footer {
         width: 700px;
         height: 220px;
     }
+}
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
@@ -250,15 +255,8 @@ footer {
         flex-direction: column;
     }
 
-    .phone,
-    .email {
+    .contact-info div {
         margin-top: 10px;
         padding: 10px 5px;
     }
-
-    /* TODO: prjects have no margins (maybe only top and bottom) and images fit in screen. */
-    /* TODO: Fill in about me info */
-    /* TODO: Resume link? */
-}
-
 }
