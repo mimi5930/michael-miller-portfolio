@@ -13,7 +13,7 @@ body {
     background-color: lightgrey;
 }
 
-/* header begin */
+/* HEADER / NAV BAR START */
 
 header {
     display: flex;
@@ -72,9 +72,11 @@ header nav ul li a:hover {
     color: rgb(236, 236, 220);
 }
 
-/* header end */
+/* HEADER / NAVBAR END */
 
-/* about me begin */
+
+
+/* ABOUT ME START */
 
 .about {
     background-color: var(--box-color);
@@ -102,9 +104,11 @@ header nav ul li a:hover {
     padding-left: 7%;
 }
 
-/* about me end */
+/* ABOUT ME END */
 
-/* projects start */
+
+
+/* PROJECTS START */
 
 .projects-section {
     margin: 80px 20px;
@@ -150,9 +154,11 @@ header nav ul li a:hover {
     left: 50px;
 }
 
-/* projects end */
+/* PROJECTS END */
 
-/* contact me start */
+
+
+/* CONTACT ME START */
 
 footer {
     text-align: center;
@@ -172,15 +178,21 @@ footer {
     padding: 0px 30px;
 }
 
-/* contact me end */
+/* CONTACT ME END */
 
-/* universal styles */
+
+
+/* SECTION TITLE STYLE START */
 
 .section-title {
     font-size: 42;
     font-weight: bold;
     text-align: center;
 }
+
+/* SECTION TITLE STYLE END */
+
+
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
